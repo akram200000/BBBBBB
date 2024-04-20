@@ -1,0 +1,1268 @@
+*{
+    margin: 0;
+    box-sizing: border-box; 
+    padding: 0;
+ }
+ 
+ body{
+ 
+     width: 100vw;
+     height: 100vh;
+     background-color: #0A0A0A;
+     color: rgb(203 213 225);
+    
+     font-family: "Poppins", sans-serif;
+     color: rgb(248 250 252);
+    
+ 
+
+ }
+ 
+ div.fb{
+     width: 35%;
+     height: 900px;
+     background-color:#171717;
+     margin-top: 160px;
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+     position: relative;
+   
+   
+ }
+ .fb input{
+     display: block;
+     width: 338.09px;
+     height:50px;
+     margin-bottom: 20px;
+     background-color: #262626;
+     border: 1px  #737373 solid ;
+     border-radius: 7px;
+     color: white;
+     font-family: "Poppins", sans-serif;
+     box-sizing: content-box;
+     padding: 0px;
+ 
+ }
+ 
+ div.fbi{
+ 
+     position: absolute;
+     margin-top: 50%;
+     width: 338.09px;
+     margin-left: auto;
+ 
+ }
+ h1.gg{
+     text-wrap:wrap;
+     margin-top: 125px;
+  color: white;
+     font-weight: 800;
+     font-size: 80px;
+ }
+ p{
+    font-family: "Poppins", sans-serif;
+ }
+ label{
+    font-family: "Poppins", sans-serif;
+ font-size: 15px;
+
+
+ }
+ input:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 0.2rem;
+    border: none;
+    outline-color: white;
+  }
+  p{
+    margin-bottom: 4px;
+  }
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+:root{
+    --_turquoise: #1d4ed8;
+
+--_border-width: 2px;
+
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body{
+  height: 100%;
+  width: 100%; 
+}
+
+
+.loading-dock{
+ 
+margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+button.submit{
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 40px;
+border: none;
+  transition: all .2s;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+width: 200px;
+height: 50px;
+font-size: 20px;
+font-weight: 500;
+position: relative;
+left: auto;
+ 
+ 
+  &:hover{
+    background-color: #1d4ed8;
+    color: white;
+
+  }
+  &:active{
+    transform: scale(0.95);
+  }
+  
+  &:focus{
+    outline: none;
+    background: var(--_turquoise);
+    color: white;
+  }
+  
+  &.popout{
+    animation: circle-to-button .5s linear forwards;
+  }
+  &.return{
+    animation: fade-to-original .3s linear;
+    &:hover{
+      background-color: var(--_turquoise);
+      color: white;
+    }
+  }
+}
+
+.loaded{
+  button.submit{
+    background-color: var(--_turquoise);
+    animation: button-to-circle .5s linear forwards;
+    animation-delay: .3s;
+  }
+  #load{
+    animation: loading-circle 3s linear forwards;
+    animation-delay: 1s;
+  }
+}
+
+
+footer{
+  width: 100%;
+  height: fit-content;
+  background-color: #111;
+}
+
+
+
+
+footer {
+	background: #111;
+	padding: 86px 0;
+  font-family: "Poppins", sans-serif;
+ 
+}
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif; 
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: white;
+    opacity: 0.6;
+	line-height: 2.5;
+	font-weight: 300;
+    transition: 0.15s;
+    font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+    
+}
+.single-box ul li a:hover {
+	font-family: "Poppins", sans-serif;
+    opacity: 1;
+	
+}
+.single-box h2 {
+	color: whitesmoke;
+	font-size: 22px;
+	font-weight: 700;
+    opacity: 0.87;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 30px;
+  
+}
+
+.fa-brands  {
+	font-size: 18px;
+	margin-right: 15px;
+    opacity: 0.6;
+    transition: 0.2s;
+   
+}
+
+.fa-brands:hover  {
+
+    opacity: 1;
+}
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+.fa-arrow-right{
+  position: relative;
+  top: 10px;
+    font-size: 40px;
+    transition: 0.3s ;
+    opacity: 0.6;
+}
+.fa-arrow-right:hover{
+   
+ cursor: pointer;
+    opacity: 1;
+}
+.input-group>.form-floating:not(:first-child)>.form-control, .input-group>.form-floating:not(:first-child)>.form-select, .input-group>:not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+    margin-left: 3px;
+    
+}
+.container{
+
+  margin-right: auto;
+  margin-left: auto;
+}
+.row{
+  display: flex;
+  
+}
+.special{
+  font-size: 18px;
+  width: 380px;
+  text-wrap: wrap;
+  text-align: center;
+position: relative;
+left: -52px;
+}
+.col-lg-3 {margin-left: 200px;}
+
+.single-box ul li  {
+	margin-bottom: 10px;
+    
+}
+input{
+  width: 250px;
+  height: 40px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  color: black;
+}
+.socials{
+
+  position: relative;
+  top:-55px ;
+  left:-111px;
+ 
+}
+.fa-brands{
+  cursor: pointer;
+}
+input:focus-visible {
+  outline: 5px solid ;
+  outline-offset: 0rem;
+  border: none;
+  outline-color: royalblue;
+  border-radius: 5px;
+}
+
+
+
+
+#load, #load-b {
+    display: none;
+    position: absolute;
+		width: 58px;
+    height: 58px;
+    opacity: 0;
+    .loading-inner {
+		  stroke {
+        dasharray: 900;
+  
+        width: 8;
+        miterlimit: 10;
+        linecap: round;
+      }
+      stroke: var(--_turquoise);
+      fill:var(--_turquoise);
+    }
+	}
+#load-b{
+  opacity: 0;
+  .loading-inner{
+    stroke: var(--_turquoise);
+  }
+}
+
+svg{
+  position: absolute;
+  display: none
+}
+
+@keyframes loading-circle {
+		0% { 
+      opacity: 1;
+      stroke-dashoffset: 0
+    }
+  50%{
+          opacity: 1;
+      stroke-dashoffset: -100
+  }
+		100% { 
+      opacity: 1;
+      stroke-dashoffset: -600;
+    }
+}
+
+@keyframes button-to-circle{
+  0%{
+    width: 160px;
+    color: var(--_turquoise);
+    border-color: var(--_turquoise);
+    background-color: var(--_turquoise);
+  }
+  50%{
+    color: rgba(255, 255, 255, 0);
+  }
+  90%{
+    width: 50px;
+    color: rgba(255, 255, 255, 0);
+    border-color: #c3c3c3;
+  }
+  100%{
+    width: 50px;
+    border-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
+    background-color:  rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes circle-to-button{
+  0%{
+    border-color: #15803d;
+    background-color: #15803d;
+    height: 50px;
+    width: 50px;
+  }
+  50%{
+    height: 50px;
+    width: 50px;
+  }
+  100%{
+    height: 50px;
+    width: 160px;
+    border-color: #15803d;
+    background-color: #15803d;
+  }
+}
+
+@keyframes fade-to-original{
+  0%{
+    background-color:#15803d;
+  }
+  100%{
+    background-color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.ro {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+header.h {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    z-index: 10000;
+    background-color: #0A0A0A;
+
+width: 100vw;
+
+}
+
+
+
+
+ .h ul {
+    list-style: none;
+    display: flex;
+   position: absolute;
+    top: 32px;
+    right: 100px;
+}
+
+
+.head ul li a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 35px;
+    color: inherit;
+    opacity: 0.7;
+    padding: 15px 20px;
+    transition: 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+ .h ul li a:hover {
+    font-size: larger;
+    opacity: 1;
+}
+
+ul li a.A::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background:orangered;
+    z-index: 10;
+    scale: 0 1;
+    transition: scale var(--time1,250ms);
+}
+
+
+
+ul li a.A:hover::after {
+    scale: var(--scale1,1) var(--scale2,1) ;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.ro {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+   
+}
+
+
+
+header.h {
+    top: 0;
+    position: relative;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+   width: 100vw;
+    z-index: 10000;
+    background-color: rgba(5, 5, 5, 1);
+
+ 
+
+
+   
+ 
+}
+
+
+
+
+ .h ul {
+    list-style: none;
+    display: flex;
+   position: absolute;
+    top: 32px;
+    right: 100px;
+}
+
+
+  
+
+.head ul li a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 35px;
+    color: inherit;
+    opacity: 0.7;
+    padding: 15px 20px;
+    transition: 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+ .h ul li a:hover {
+    font-size: larger;
+    opacity: 1;
+}
+
+ul li a.A::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background:orangered;
+    z-index: 10;
+    scale: 0 1;
+    transition: scale var(--time1,250ms);
+}
+
+
+ul li a.A:hover::after {
+    scale: var(--scale1,1) var(--scale2,1) ;
+}
+
+section{
+    width: 100vw;
+    height: 120vh;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.h div ul li:last-child a {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(40, 40, 40);
+    border-radius: 20px;
+    padding: 10px 20px;
+    opacity: 1;
+    position: relative;
+    top: 3.0px;
+    font-family: "Roboto", sans-serif;
+}
+@media(min-width:1200px ) and (max-width:1600px) {
+    *{
+        margin: 0;
+        box-sizing: border-box; 
+        padding: 0;
+     }
+     
+     body{
+     
+         width: 100vw;
+         height: 100vh;
+         background-color: #0A0A0A;
+         color: rgb(203 213 225);
+        
+         font-family: "Poppins", sans-serif;
+         color: rgb(248 250 252);
+        
+     
+    
+     }
+     
+     div.fb{
+         width: 50%;
+         height: 800px;
+         background-color:#171717;
+         margin-top: 105px;
+         border-radius: 5px;
+         display: flex;
+         justify-content: center;
+         position: relative;
+       
+       
+     }
+    .fb input{
+         display: block;
+         width: 338.09px;
+         height:50px;
+         margin-bottom: 20px;
+         background-color: #262626;
+         border: 1px  #737373 solid ;
+         border-radius: 7px;
+         color: white;
+         font-family: "Poppins", sans-serif;
+         box-sizing: content-box;
+         padding: 0px;
+     
+     }
+     
+     div.fbi{
+     
+         position: absolute;
+         margin-top: 40%;
+         width: 338.09px;
+         margin-left: auto;
+     
+     }
+     h1.gg{
+         text-wrap:wrap;
+         margin-top:86px;
+      color: white;
+         font-weight: 800;
+         font-size: 70px;
+     }
+     p{
+        font-family: "Poppins", sans-serif;
+     }
+     label{
+        font-family: "Poppins", sans-serif;
+     font-size: 15px;
+    
+    
+     }
+     input:focus-visible {
+        outline: 3px solid white;
+        outline-offset: 0.2rem;
+        border: none;
+        outline-color: white;
+      }
+      p{
+        margin-bottom: 4px;
+      }
+    
+
+
+    
+
+
+
+    
+    :root{
+        --_turquoise: #1d4ed8;
+    
+    --_border-width: 2px;
+    
+    }
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    html, body{
+      height: 100%;
+      width: 100%; 
+    }
+    
+    
+    .loading-dock{
+     
+    margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      color: white;
+    }
+    
+    button.submit{
+      cursor: pointer;
+      width: 160px;
+      height: 50px;
+      font-size: 17px;
+      font-weight: 600;
+      color: white;
+      background-color: #2563eb;
+      border-radius: 40px;
+    border: none;
+      transition: all .2s;
+      letter-spacing: 1px;
+      font-family: "Poppins", sans-serif;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    left: auto;
+     
+     
+      &:hover{
+        background-color: #1d4ed8;
+        color: white;
+    
+      }
+      &:active{
+        transform: scale(0.95);
+      }
+      
+      &:focus{
+        outline: none;
+        background: var(--_turquoise);
+        color: white;
+      }
+      
+      &.popout{
+        animation: circle-to-button .5s linear forwards;
+      }
+      &.return{
+        animation: fade-to-original .3s linear;
+        &:hover{
+          background-color: var(--_turquoise);
+          color: white;
+        }
+      }
+    }
+    
+    .loaded{
+      button.submit{
+        background-color: var(--_turquoise);
+        animation: button-to-circle .5s linear forwards;
+        animation-delay: .3s;
+      }
+      #load{
+        animation: loading-circle 3s linear forwards;
+        animation-delay: 1s;
+      }
+    }
+    
+    #load, #load-b {
+        display: none;
+        position: absolute;
+            width: 58px;
+        height: 58px;
+        opacity: 0;
+        .loading-inner {
+              stroke {
+            dasharray: 900;
+      
+            width: 8;
+            miterlimit: 10;
+            linecap: round;
+          }
+          stroke: var(--_turquoise);
+          fill:var(--_turquoise);
+        }
+        }
+    #load-b{
+      opacity: 0;
+      .loading-inner{
+        stroke: var(--_turquoise);
+      }
+    }
+    
+    svg{
+      position: absolute;
+      display: none
+    }
+    
+    @keyframes loading-circle {
+            0% { 
+          opacity: 1;
+          stroke-dashoffset: 0
+        }
+      50%{
+              opacity: 1;
+          stroke-dashoffset: -100
+      }
+            100% { 
+          opacity: 1;
+          stroke-dashoffset: -600;
+        }
+    }
+    
+    @keyframes button-to-circle{
+      0%{
+        width: 160px;
+        color: var(--_turquoise);
+        border-color: var(--_turquoise);
+        background-color: var(--_turquoise);
+      }
+      50%{
+        color: rgba(255, 255, 255, 0);
+      }
+      90%{
+        width: 50px;
+        color: rgba(255, 255, 255, 0);
+        border-color: #c3c3c3;
+      }
+      100%{
+        width: 50px;
+        border-color: rgba(255, 255, 255, 0);
+        color: rgba(255, 255, 255, 0);
+        background-color:  rgba(255, 255, 255, 0);
+      }
+    }
+    
+    @keyframes circle-to-button{
+      0%{
+        border-color: #15803d;
+        background-color: #15803d;
+        height: 50px;
+        width: 50px;
+      }
+      50%{
+        height: 50px;
+        width: 50px;
+      }
+      100%{
+        height: 50px;
+        width: 160px;
+        border-color: #15803d;
+        background-color: #15803d;
+      }
+    }
+    
+    @keyframes fade-to-original{
+      0%{
+        background-color:#15803d;
+      }
+      100%{
+        background-color: white;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    .ro {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    
+    
+    header.h {
+        display: flex;
+        padding: 25px;
+        justify-content: space-between;
+        z-index: 10000;
+        background-color: #0A0A0A;
+    
+    width: 100vw;
+    
+    }
+    
+    
+    
+    
+     .h ul {
+        list-style: none;
+        display: flex;
+       position: absolute;
+        top: 32px;
+        right: 100px;
+    }
+    
+    
+    .head ul li a {
+        position: relative;
+        text-decoration: none;
+        margin: 0 35px;
+        color: inherit;
+        opacity: 0.7;
+        padding: 15px 20px;
+        transition: 0.3s ease;
+        font-family: "Poppins", sans-serif;
+    }
+    
+     .h ul li a:hover {
+        font-size: larger;
+        opacity: 1;
+    }
+    
+    ul li a.A::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background:orangered;
+        z-index: 10;
+        scale: 0 1;
+        transition: scale var(--time1,250ms);
+    }
+    
+    
+    
+    ul li a.A:hover::after {
+        scale: var(--scale1,1) var(--scale2,1) ;
+    }
+    
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    .ro {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+       
+    }
+    
+    
+    
+    header.h {
+        top: 0;
+        position: relative;
+        display: flex;
+        padding: 25px;
+        justify-content: space-between;
+       width: 100vw;
+        z-index: 10000;
+        background-color: rgba(5, 5, 5, 1);
+    
+     
+    
+    
+       
+     
+    }
+    
+    
+    
+    
+     .h ul {
+        list-style: none;
+        display: flex;
+       position: absolute;
+        top: 32px;
+        right: 100px;
+    }
+    
+    
+      
+    
+    .head ul li a {
+        position: relative;
+        text-decoration: none;
+        margin: 0 35px;
+        color: inherit;
+        opacity: 0.7;
+        padding: 15px 20px;
+        transition: 0.3s ease;
+        font-family: "Poppins", sans-serif;
+    }
+    
+     .h ul li a:hover {
+        font-size: larger;
+        opacity: 1;
+    }
+    
+    ul li a.A::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background:orangered;
+        z-index: 10;
+        scale: 0 1;
+        transition: scale var(--time1,250ms);
+    }
+    
+    
+    ul li a.A:hover::after {
+        scale: var(--scale1,1) var(--scale2,1) ;
+    }
+    
+    section{
+        width: 100vw;
+        height: 120vh;
+        background-color: inherit;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .h div ul li:last-child a {
+        background-color: rgba(255, 255, 255, 1);
+        color: rgb(40, 40, 40);
+        border-radius: 20px;
+        padding: 10px 20px;
+        opacity: 1;
+        position: relative;
+        top: 3.0px;
+        font-family: "Roboto", sans-serif;
+    }
+
+
+    footer {
+      background: #111;
+      padding: 86px 0;
+      font-family: "Poppins", sans-serif;
+     
+    }
+    .single-content {
+      text-align: center;
+      padding: 115px 0;
+    }
+    .single-box p {
+      color: #fff;
+      line-height: 1.9;
+    }
+    .single-box h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 5px;
+      font-family: "Poppins", sans-serif; 
+    }
+    .single-box .card-area i {
+      color: #ffffff;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    .single-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .single-box ul li a {
+      text-decoration: none;
+      color: white;
+        opacity: 0.6;
+      line-height: 2.5;
+      font-weight: 300;
+        transition: 0.15s;
+        font-family: "Poppins", sans-serif;
+      white-space: nowrap;
+        
+    }
+    .single-box ul li a:hover {
+      font-family: "Poppins", sans-serif;
+        opacity: 1;
+      
+    }
+    .single-box h2 {
+      color: whitesmoke;
+      font-size: 22px;
+      font-weight: 700;
+        opacity: 0.87;
+        font-weight: 300;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 30px;
+      
+    }
+    
+    .fa-brands  {
+      font-size: 18px;
+      margin-right: 15px;
+        opacity: 0.6;
+        transition: 0.2s;
+       
+    }
+    
+    .fa-brands:hover  {
+    
+        opacity: 1;
+    }
+    
+    .fa-arrow-right{
+      position: relative;
+      top: -52px;
+        font-size: 40px;
+        transition: 0.3s ;
+        opacity: 0.6;
+        right: -254px;
+    }
+    .fa-arrow-right:hover{
+       
+     cursor: pointer;
+        opacity: 1;
+    }
+    .input-group>.form-floating:not(:first-child)>.form-control, .input-group>.form-floating:not(:first-child)>.form-select, .input-group>:not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+        margin-left: 3px;
+        
+    }
+    .container{
+    
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .row{
+      display: flex;
+      
+    }
+    .special{
+      font-size: 18px;
+      width: 380px;
+      text-wrap: wrap;
+      text-align: center;
+    position: relative;
+    left: -52px;
+    font-family: "Tajawal", sans-serif;
+    }
+    .col-lg-3 {margin-left: 60px;}
+    
+    .single-box ul li  {
+      margin-bottom: 10px;
+        
+    }
+     footer input{
+      width: 250px;
+      height: 40px;
+      background-color: white;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 6px;
+      color: black;
+    }
+    .socials{
+    
+      position: relative;
+      top:-60px ;
+      font-family: "Tajawal", sans-serif;
+      left:-1px;
+     
+    }
+    .fa-brands{
+      cursor: pointer;
+    }
+    input:focus-visible {
+      outline: 5px solid ;
+      outline-offset: 0rem;
+      border: none;
+      outline-color: royalblue;
+      border-radius: 5px;
+    }
+    
+    
+    .ff12{
+      margin-left: 0px;
+    }
+   
+.Follow{
+ position: relative;
+ top: -2rem;
+ font-size: 22px;
+}
+
+}
